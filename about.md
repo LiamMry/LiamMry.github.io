@@ -9,6 +9,9 @@ layout: page
 
 ![pp2](https://github.com/user-attachments/assets/f0a93ae2-cc40-49f8-9451-7a047d0db3da)
 
+<img src="![f0a93ae2-cc40-49f8-9451-7a047d0db3da](https://github.com/user-attachments/assets/1f2754b0-fd24-46a4-92ce-3cad43819a73)
+" width="200"/>
+
 
 
 I am a third-year Ph.D. student at Université Paris-Saclay, conducting my research at ONERA (The French Aerospace Lab) and IMS Laboratory. My work focuses on the study of generative models—particularly diffusion models—for solving inverse problems in imaging. I am interested in understanding and improving the ability of these models to recover high-fidelity images from incomplete or corrupted observations, with applications spanning scientific and medical imaging.
