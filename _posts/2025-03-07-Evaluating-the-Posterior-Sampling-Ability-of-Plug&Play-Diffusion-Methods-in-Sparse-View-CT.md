@@ -1,19 +1,16 @@
 ---
-title:  "Evaluating Posterior Sampling of PnP Diffusion Models in Sparse-View CT"
+title:  "Evaluating Posterior Sampling of PnP Diffusion Models in Sparse-View CT - ICASSP 2025"
 mathjax: true
 layout: post
 ---
 
-# 📄 Evaluating Posterior Sampling of PnP Diffusion Models in Sparse-View CT - ICASSP 2025
-
 **Authors**: Liam Moroy, Guillaume Bourmaud, Frédéric Champagnat, Jean-François Giovannelli  
 **Affiliations**: ONERA / Université Paris-Saclay, IMS / Université de Bordeaux  
 
----
-
-## 🧠 Overview
+### 🧠 Overview
 
 This work investigates whether **Plug&Play (PnP) diffusion models**—a class of powerful generative approaches—can accurately sample from the **posterior distribution** in **Sparse-View CT (SVCT)** settings, particularly when the posterior is **non-peaked or multimodal**.
+
 
 ---
 
