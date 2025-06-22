@@ -9,29 +9,33 @@ layout: post
 
 ### 🧠 Overview
 
-This work investigates whether **Plug&Play (PnP) diffusion models**—a class of powerful generative approaches—can accurately sample from the **posterior distribution** in **Sparse-View CT (SVCT)** settings, particularly when the posterior is **non-peaked or multimodal**.
+This work investigates whether **Plug&Play (PnP) diffusion models**—a class of diffusion models agnostic to the considered observation model—can accurately sample from the **posterior distribution** in **Sparse-View CT (SVCT)** settings, particularly when the posterior is **non-peaked or multimodal**.
+
+## ❗ Problematic
+
+Diffusion models are typically evaluated using image-to-image metrics like PSNR or SSIM, which only assess point estimates and fail to reflect how well the posterior distribution is captured. Most SVCT applications assume highly informative sinograms, where the posterior is near unimodal. However, in real-world scenarios with limited projections, the posterior becomes broad or multimodal—yet current methods and evaluations overlook this regime.
 
 
 ---
 
 ## 📉 Problem Setup
 
-The forward model in SVCT is:
+The observation model is:
 
 $$
 \mathbf{y}_p = \mathbf{H}_p \mathbf{x} + \boldsymbol{\epsilon}_p, \quad \boldsymbol{\epsilon}_p \sim \mathcal{N}(0, \sigma_y^2 \mathbf{I})
 $$
 
 - \\(\mathbf{y}_p\\): sinogram with \\(p\\) projections  
-- \( \mathbf{H}_p \): Radon transform  
-- \( \mathbf{x} \): target image  
-- Goal: approximate the posterior \( p(\mathbf{x} | \mathbf{y}_p) \)
+- \\( \mathbf{H}_p \\): Radon transform  
+- \\( \mathbf{x} \\): target image  
+- Goal: approximate the posterior \\( p(\mathbf{x} | \mathbf{y}_p) \\)
 
 ---
 
 ## 🧪 Evaluation Metrics
 
-Two criteria to assess the *approximate posterior* \( \tilde{p}(\mathbf{x} | \mathbf{y}_p) \):
+Two criteria to assess the *approximate posterior* \\( \tilde{p}(\mathbf{x} | \mathbf{y}_p) \\):
 
 1. **Posterior-Prior Similarity (PPS)**:  
    Ensures marginal of approximate posterior matches the prior:
@@ -61,7 +65,7 @@ Two criteria to assess the *approximate posterior* \( \tilde{p}(\mathbf{x} | \ma
 
 ## 📊 Key Findings
 
-- As projections decrease (e.g., \( p = 6 \)), **PnP diffusion models fail to match the true posterior**, even with state-of-the-art methods.
+- As projections decrease (e.g., \\( p = 6 \\)), **PnP diffusion models fail to match the true posterior**, even with state-of-the-art methods.
 - Surprisingly, **DPS** (the simplest method) yielded the best balance of posterior quality and consistency.
 - Traditional metrics like PSNR/SSIM are inadequate in this regime.
 
