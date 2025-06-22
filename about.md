@@ -9,8 +9,7 @@ layout: page
 
 ![pp2](https://github.com/user-attachments/assets/f0a93ae2-cc40-49f8-9451-7a047d0db3da)
 
-<img src="![f0a93ae2-cc40-49f8-9451-7a047d0db3da](https://github.com/user-attachments/assets/1f2754b0-fd24-46a4-92ce-3cad43819a73)
-" width="200"/>
+<img src="[pp2.jpg](https://github.com/LiamMry/LiamMry.github.io/blob/master/pp2.jpg?raw=true)" width="200"/>
 
 
 
