@@ -26,7 +26,7 @@ $$
 \mathbf{y}_p = \mathbf{H}_p \mathbf{x} + \boldsymbol{\epsilon}_p, \quad \boldsymbol{\epsilon}_p \sim \mathcal{N}(0, \sigma_y^2 \mathbf{I})
 $$
 
-- \( \mathbf{y}_p \): sinogram with \( p \) projections  
+- $ \mathbf{y}_p $: sinogram with $ p $ projections  
 - \( \mathbf{H}_p \): Radon transform  
 - \( \mathbf{x} \): target image  
 - Goal: approximate the posterior \( p(\mathbf{x} | \mathbf{y}_p) \)
