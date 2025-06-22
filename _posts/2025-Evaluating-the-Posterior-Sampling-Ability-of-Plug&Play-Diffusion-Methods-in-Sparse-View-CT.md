@@ -1,4 +1,11 @@
-# 📄 Evaluating Posterior Sampling of PnP Diffusion Models in Sparse-View CT
+---
+title:  "Evaluating Posterior Sampling of PnP Diffusion Models in Sparse-View CT"
+mathjax: true
+layout: post
+categories: media
+---
+
+# 📄 Evaluating Posterior Sampling of PnP Diffusion Models in Sparse-View CT - ICASSP 2025
 
 **Authors**: Liam Moroy, Guillaume Bourmaud, Frédéric Champagnat, Jean-François Giovannelli  
 **Affiliations**: ONERA / Université Paris-Saclay, IMS / Université de Bordeaux  
