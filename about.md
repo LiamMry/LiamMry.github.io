@@ -4,14 +4,7 @@ permalink: "/about/"
 layout: page
 ---
 
-![screenshot]([https://github.com/LiamMry/LiamMry.github.io/blob/master/pp2.jpg](https://github.com/LiamMry/LiamMry.github.io/blob/master/pp2.jpg?raw=true))
-<img src="[pp2.jpg](https://github.com/LiamMry/LiamMry.github.io/blob/master/pp2.jpg?raw=true)" width="200"/>
-
-![pp2](https://github.com/user-attachments/assets/f0a93ae2-cc40-49f8-9451-7a047d0db3da){ width="800" height="600" style="display: block; margin: 0 auto" }
-
-<img src="[pp2.jpg](https://github.com/LiamMry/LiamMry.github.io/blob/master/pp2.jpg?raw=true)" width="200"/>
-
-<img src="pp2.jpg" alt="Description of the image">
+<img src="pp2.jpg" width="250">
 
 
 
