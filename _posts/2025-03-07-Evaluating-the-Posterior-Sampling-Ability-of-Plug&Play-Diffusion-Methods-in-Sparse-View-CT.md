@@ -4,8 +4,8 @@ mathjax: true
 layout: post
 ---
 
-**Authors**: Liam Moroy, Guillaume Bourmaud, Frédéric Champagnat, Jean-François Giovannelli  
-**Affiliations**: ONERA / Université Paris-Saclay, IMS / Université de Bordeaux  
+**Authors**: L. Moroy<sup>1,2</sup>, G. Bourmaud<sup>2</sup>, F. Champagnat<sup>1</sup>, J.-F. Giovannelli<sup>2</sup>  
+**Affiliations**: <sup>1</sup>ONERA (Univ. Paris-Saclay), <sup>2</sup>IMS (Univ. Bordeaux – CNRS – BINP),   
 
 ### 🧠 Overview
 
