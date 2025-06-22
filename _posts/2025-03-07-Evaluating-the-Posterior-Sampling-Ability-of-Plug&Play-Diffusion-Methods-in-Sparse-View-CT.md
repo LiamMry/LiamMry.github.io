@@ -2,7 +2,6 @@
 title:  "Evaluating Posterior Sampling of PnP Diffusion Models in Sparse-View CT"
 mathjax: true
 layout: post
-categories: media
 ---
 
 # 📄 Evaluating Posterior Sampling of PnP Diffusion Models in Sparse-View CT - ICASSP 2025
