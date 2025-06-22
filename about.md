@@ -20,5 +20,5 @@ I am a third-year Ph.D. student at Université Paris-Saclay, conducting my resea
     - Diffusion models
  
 ## Resume
-<a href="link/to/your/download/file" download>Download link</a>
+<a href="/LIAM_MOROY_CV.pdf" download>Resume download link</a>
 
