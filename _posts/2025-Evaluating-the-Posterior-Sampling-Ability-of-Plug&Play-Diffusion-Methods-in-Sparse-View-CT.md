@@ -79,4 +79,11 @@ Two criteria to assess the *approximate posterior* \( \tilde{p}(\mathbf{x} | \ma
 ---
 
 ## 📘 Citation
-
+```
+@article{moroy2024posterior,
+  title={Evaluating the Posterior Sampling Ability of Plug\&Play Diffusion Methods in Sparse-View CT},
+  author={Moroy, Liam and Bourmaud, Guillaume and Champagnat, Fr{\'e}d{\'e}ric and Giovannelli, Jean-Fran{\c{c}}ois},
+  journal={arXiv preprint arXiv:2410.21301},
+  year={2024}
+}
+```
