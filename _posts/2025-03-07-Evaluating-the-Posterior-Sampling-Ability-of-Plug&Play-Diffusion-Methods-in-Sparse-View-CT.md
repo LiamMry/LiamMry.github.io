@@ -11,6 +11,7 @@ layout: post
 
 This work investigates whether **Plug&Play (PnP) diffusion models**—a class of diffusion models agnostic to the considered observation model—can accurately sample from the **posterior distribution** in **Sparse-View CT (SVCT)** settings, particularly when the posterior is **non-peaked or multimodal**.
 
+
 ## ❗ Problematic
 
 Diffusion models are typically evaluated using image-to-image metrics like PSNR or SSIM, which only assess point estimates and fail to reflect how well the posterior distribution is captured. Most SVCT applications assume highly informative sinograms, where the posterior is near unimodal. However, in real-world scenarios with limited projections, the posterior becomes broad or multimodal—yet current methods and evaluations overlook this regime.
