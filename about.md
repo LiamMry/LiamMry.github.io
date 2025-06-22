@@ -4,7 +4,7 @@ permalink: "/about/"
 layout: page
 ---
 
-<img src="/pp2.jpg" width="250" alt="test">
+<img src="/pp2.jpg" width="250" style="border-radius: 20px;">
 
 
 
