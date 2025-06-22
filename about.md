@@ -4,6 +4,7 @@ permalink: "/about/"
 layout: page
 ---
 
+
 I am a third-year Ph.D. student at Université Paris-Saclay, conducting my research at ONERA (The French Aerospace Lab) and IMS Laboratory. My work focuses on the study of generative models—particularly diffusion models—for solving inverse problems in imaging. I am interested in understanding and improving the ability of these models to recover high-fidelity images from incomplete or corrupted observations, with applications spanning scientific and medical imaging.
 
 ## Interests
@@ -14,7 +15,7 @@ I am a third-year Ph.D. student at Université Paris-Saclay, conducting my resea
 
 ## Screenshots
 
-![screenshot](https://user-images.githubusercontent.com/4943215/109431850-cd711780-7a08-11eb-8601-2763f2ee6bb4.png)
+![screenshot](https://github.com/LiamMry/LiamMry.github.io/blob/master/pp2.jpg)
 
 ![screenshot](https://user-images.githubusercontent.com/4943215/109431832-b6cac080-7a08-11eb-9c5e-a058680c23a1.png)
 
