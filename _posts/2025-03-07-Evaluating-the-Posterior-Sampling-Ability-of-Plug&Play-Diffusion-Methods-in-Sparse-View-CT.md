@@ -29,13 +29,13 @@ $$
 - \\(\mathbf{y}_p\\): sinogram with \\(p\\) projections  
 - \\( \mathbf{H}_p \\): Radon transform  
 - \\( \mathbf{x} \\): target image  
-- Goal: approximate the posterior \\( p(\mathbf{x} | \mathbf{y}_p) \\)
+- Goal: approximate the posterior \\( p(\mathbf{x} \vert \mathbf{y}_p) \\)
 
 ---
 
 ## 🧪 Evaluation Metrics
 
-Two criteria to assess the *approximate posterior* \\( \tilde{p}(\mathbf{x} | \mathbf{y}_p) \\):
+Two criteria to assess the *approximate posterior* \\( \tilde{p}(\mathbf{x} \vert \mathbf{y}_p) \\):
 
 1. **Posterior-Prior Similarity (PPS)**:  
    Ensures marginal of approximate posterior matches the prior:
@@ -50,7 +50,7 @@ Two criteria to assess the *approximate posterior* \\( \tilde{p}(\mathbf{x} | \m
    Checks if posterior samples explain the observed measurements:
 
    $$
-   \frac{1}{m_p \sigma_y^2} \mathbb{E}_{\mathbf{y}_p, \mathbf{x} \sim \tilde{p}(\cdot|\mathbf{y}_p)} \left[ \| \mathbf{y}_p - \mathbf{H}_p \mathbf{x} \|_2^2 \right] \approx 1
+   \frac{1}{m_p \sigma_y^2} \mathbb{E}_{\mathbf{y}_p, \mathbf{x} \sim \tilde{p}(\cdot\vert\mathbf{y}_p)} \left[ \vert \mathbf{y}_p - \mathbf{H}_p \mathbf{x} \|_2^2 \right] \approx 1
    $$
 
 ---
