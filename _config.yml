@@ -1,6 +1,6 @@
 title: "Liam Moroy"
 author: "Liam Moroy"
-description: "PhD. student - Paris-Saclay University - ONERA / IMS"
+description: "Postdoc - BISC Group - Heriot-Watt University"
 permalink: /:title/
 lang: "en"
 excerpt_separator: "\n\n\n"
@@ -22,7 +22,7 @@ navigation:                # accepts {file, title, url, icon, sidebaricon}
   - {file: "about.md"}
 
 external:                  # shows a footer with social links - for available icons see fontawesome.com/icons
-  - {title: Mail, icon: envelope, url: "mailto:liam.moroy@onera.fr"}
+  - {title: Mail, icon: envelope, url: "mailto:l.moroy@hw.ac.uk"}
   - {title: Github, icon: github, url: "https://github.com/LiamMry"}
   #- {title: Subscribe, icon: rss, url: "/feed.xml"}
 
