@@ -1,5 +1,5 @@
 ---
-title:  "On the Posterior Gap in Plug & Play Diffusion Methods for Sparse-View Computed Tomography"
+title:  "On the Posterior Gap in Plug & Play Diffusion Methods for Sparse-View Computed Tomography - IEEE JSTSP 2026"
 mathjax: true
 layout: post
 ---
@@ -11,7 +11,7 @@ layout: post
 
 This work is an extended version of our [ICASSP 2025 paper](https://arxiv.org/abs/2410.21301). It formalizes the notion of **Posterior Gap (PG)**, the discrepancy between the true posterior distribution and the approximation induced by a **generative model**, and proposes a practical framework to evaluate it for **Sparse-View CT (SVCT)**. We also introduce an **NCE-based calibration strategy** for PnP methods and conduct a comprehensive benchmark of DPS, ΠG, and FPS across three datasets. -> <a href="https://doi.org/10.1109/JSTSP.2026.3659332">IEEE JSTSP</a>
 
----
+
 
 ## ❗ Problematic
 
