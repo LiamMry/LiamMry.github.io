@@ -130,5 +130,3 @@ All images are resized to 128×128 and normalized to [0, 1]. Noise standard devi
   doi={10.1109/JSTSP.2026.3659332}
 }
 ```
-
-## Currently under peer review
