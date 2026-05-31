@@ -1,20 +1,19 @@
 ---
 layout: page
-title: "News"
+title: "About me"
 ---
 
-- 29 Jan 2026 📝 : Publication of **"On the Posterior Gap in Plug & Play Diffusion Methods for Sparse-View Computed Tomography"**, *L. Moroy, G. Bourmaud, F. Champagnat, J.-F. Giovannelli*, to the journal IEEE **JSTSP Special Issue on High-Dimensional Imaging: Emerging Challenges and Advances in Reconstruction and Restoration**.
+<div align="center">
+    <img src="/pp2.jpg" width="250" style="border-radius: 20px;">
+</div>
 
-- 01 Dec 2025 🧑‍🔬 : I started as a Research Associate in the BISC group, led by Prof. Yoann Altmann, at <a href="https://www.hw.ac.uk/">Heriot-Watt University</a>, Edinburgh, UK.
+I am a Research Associate (Postdoc) at Heriot-Watt University, in the BISC group, led by Prof. Yoann Altmann. I completed my Ph.D. at Université Paris-Saclay, conducting my research at ONERA (The French Aerospace Lab) and IMS Laboratory. My work focuses on the study of generative models, particularly diffusion models, for solving inverse problems. I am interested in improving the ability of these models to recover high-fidelity images from incomplete or corrupted observations, with applications spanning scientific and medical imaging.
 
-- 28 Nov 2025 🎓 : I successfully defended my PhD! A big thanks to the jury members: **Sylvie LE HÉGARAT-MASCLE** (Présidente du Jury), Professeure des universités, Université Paris-Sud; **Bruno GALERNE** (Rapporteur & Examinateur), Professeur des universités, Université d'Orléans; **Nicolas DOBIGEON** (Rapporteur & Examinateur), Professeur des universités, Université de Toulouse; **Marcelo PEREYRA** (Examinateur), Professor, Heriot-Watt University.
+## Interests
 
-<!-- - 07 Jun 2025 📝 : Submission of **"On the Posterior Gap in Plug & Play Diffusion Methods for Sparse-View Computed Tomography"**, *L. Moroy, G. Bourmaud, F. Champagnat, J.-F. Giovannelli*, to the journal IEEE **JSTSP Special Issue on High-Dimensional Imaging: Emerging Challenges and Advances in Reconstruction and Restoration**. -->
+- Inverse problems in imaging
+- Generative modelling
+    - Diffusion models
 
-- 07 Mar 2025 📝 : Publication of **"Evaluating Posterior Sampling of PnP Diffusion Models in Sparse-View CT"**, *L .Moroy, G. Bourmaud, F. Champagnat, J.-F. Giovannelli*, to the conference **ICASSP 2025**.
-
-- 23 Jan 2025 🔉 : Talk about **“Plug-and-Play Diffusion Methods for Posterior Sampling in Tomographic Reconstruction”**, at AI in <a href="https://www.ims-bordeaux.fr/">IMS</a>, Bordeaux.
-
-- 09 Dec 2024 🔉 : Talk about **“Evaluating the Posterior Sampling Ability of Plug&Play Diffusion Methods in Sparse-View CT”**, at <a href="https://gdr-iasis.cnrs.fr/reunion/529/">GdR IASIS: Advances in Learning-Based Image Restoration</a>, Henri Poincaré Institute, Sorbonne University, Paris.
-
-<!-- - 12 Sep 2024 📝 : Submission of **"Evaluating Posterior Sampling of PnP Diffusion Models in Sparse-View CT"**, *L .Moroy, G. Bourmaud, F. Champagnat, J.-F. Giovannelli*, to the conference **ICASSP 2025**. -->
+## Resume
+<a href="/LIAM_MOROY_CV.pdf" download>Download CV (PDF)</a>
