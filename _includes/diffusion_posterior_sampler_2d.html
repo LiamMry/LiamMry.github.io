@@ -1,6 +1,4 @@
 
-<h2 class="sr-only">Interactive 2D diffusion and posterior sampling visualiser — annealed Langevin dynamics on a mixture of Gaussians with DPS posterior sampling</h2>
-
 <div style="padding:1rem 0">
 
 <canvas id="dc" width="620" height="420" style="width:100%;border-radius:var(--border-radius-lg);display:block;cursor:crosshair"></canvas>
@@ -17,6 +15,10 @@
   <div style="display:flex;align-items:center;gap:6px">
     <label for="spdSl" style="font-size:13px;color:var(--color-text-secondary)">Speed</label>
     <input id="spdSl" type="range" min="1" max="10" value="3" step="1" style="width:80px">
+  </div>
+  <div style="display:flex;align-items:center;gap:6px">
+    <label for="nPartSl" style="font-size:13px;color:var(--color-text-secondary)">Particles: <b id="nPartLbl">200</b></label>
+    <input id="nPartSl" type="range" min="100" max="500" value="200" step="10" style="width:80px">
   </div>
   <div id="yCtrl" style="display:none;align-items:center;gap:6px">
     <label for="yObsSl" style="font-size:13px;color:var(--color-text-secondary)">y<sub>obs</sub> = <b id="yLbl">1.5</b></label>
@@ -50,7 +52,7 @@ const ofc = document.createElement('canvas');
 ofc.width=LW; ofc.height=LH;
 const octx = ofc.getContext('2d');
 
-let parts=[], si=0, ss=0, run=true, post=false, sarr=true, spd=3, yO=1.5;
+let parts=[], si=0, ss=0, run=true, post=false, sarr=true, spd=3, yO=1.5, nPart=200;
 let dcSig=-1;
 
 function scoreP(x,y,sig){
@@ -84,7 +86,7 @@ function fcL(lx,ly){return[(lx/LW*2-1)*DOM,-(ly/LH*2-1)*DOM];}
 
 function initP(){
   si=0;ss=0;dcSig=-1;
-  parts=Array.from({length:200},()=>({x:rn()*SM,y:rn()*SM,tr:[]}));
+  parts=Array.from({length:nPart},()=>({x:rn()*SM,y:rn()*SM,tr:[]}));
 }
 
 function step(){
@@ -248,6 +250,13 @@ document.getElementById('btnArr').addEventListener('click',function(){
   this.textContent=sarr?'Score field: on':'Score field: off';
 });
 document.getElementById('spdSl').addEventListener('input',e=>spd=parseInt(e.target.value));
+document.getElementById('nPartSl').addEventListener('input',function(){
+  document.getElementById('nPartLbl').textContent=this.value;
+});
+document.getElementById('nPartSl').addEventListener('change',function(){
+  nPart=parseInt(this.value);
+  initP();
+});
 document.getElementById('yObsSl').addEventListener('input',function(){
   yO=parseFloat(this.value);
   document.getElementById('yLbl').textContent=yO.toFixed(1);

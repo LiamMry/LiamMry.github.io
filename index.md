@@ -30,9 +30,9 @@ I am a Research Associate (Postdoc) at Heriot-Watt University, in the BISC group
 
 </div>
 
-#### Diffusion model — interactive demo
+#### Diffusion model — interactive demo - 2D diffusion prior and posterior sampling visualiser —
 
-Annealed Langevin dynamics on a 2D mixture of Gaussians. Toggle **Posterior sampling** to condition on a linear observation.
+Annealed Langevin dynamics on a 2D mixture of Gaussians with DPS guidance. Toggle **Posterior sampling** to condition on a linear observation.
 
 {% include diffusion_posterior_sampler_2d.html %}
 
