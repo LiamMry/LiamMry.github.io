@@ -207,8 +207,9 @@ function drawLabels(sig){
 }
 
 function render(){
+  // if(Math.abs(sig-dcSig)/Math.max(dcSig,0.001)>0.06)buildDens(sig);
   const sig=sigs[Math.min(si,NS-1)];
-  if(Math.abs(sig-dcSig)/Math.max(dcSig,0.001)>0.06)buildDens(sig);
+  if(dcSig<0)buildDens(sigs[NS-1]);
   ctx.imageSmoothingEnabled=true;
   ctx.imageSmoothingQuality='high';
   ctx.drawImage(ofc,0,0,CW,CH);
