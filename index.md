@@ -36,5 +36,11 @@ Annealed Langevin dynamics on a 2D mixture of Gaussians with DPS guidance. Toggl
 
 {% include diffusion_posterior_sampler_2d.html %}
 
+#### Sampling algorithms — trajectory comparison
+
+Side-by-side comparison of DDPM (stochastic SDE), DDIM (probability flow ODE), and OT-Flow Matching on the same 2D mixture of Gaussians.
+
+{% include sampling_trajectory_comparison.html %}
+
 ## Resume
 <a href="/LIAM_MOROY_CV.pdf" download>Download CV (PDF)</a>
