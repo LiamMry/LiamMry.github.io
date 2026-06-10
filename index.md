@@ -8,7 +8,7 @@ title: "About me"
   <p style="font-size:1.15rem; font-weight:600; margin: 0 0 0.3rem;">Liam Moroy</p>
   <p style="font-size:0.92rem; color:#666; margin: 0 0 1rem;">Postdoc · Heriot-Watt University (BISC) · Edinburgh</p>
   <p style="font-size:0.97rem; font-style:italic; max-width:520px; margin: 0 auto 1.2rem;">
-    I build theoretically-grounded posterior samplers for diffusion models, with applications in medical and scientific imaging — focusing on sparse-view CT reconstruction.
+    I build theoretically-grounded generative models (diffusion, flow-matching, ...) for posterior sampling, with applications ranging from aerospace, nuclear and medical imaging, or any kind of signals really.
   </p>
   <!-- Social links -->
   <div style="display:flex; justify-content:center; gap:14px; flex-wrap:wrap; margin-bottom:1.5rem;">

@@ -28,7 +28,14 @@
 {% endif %}
 
 <header>
-  <a href="{{ "/" | relative_url }}" class="title">{{ site.title | escape }}</a>
+  <!-- <a href="{{ "/" | relative_url }}" class="title">{{ site.title | escape }}</a> -->
+  <a class="title" href="{{ '/' | relative_url }}" style="display:flex; align-items:center; gap:10px; text-decoration:none;">
+  <img src="{{ '/pp2.jpg' | relative_url }}"
+       alt="Liam Moroy"
+       style="width:34px; height:34px; border-radius:50%; object-fit:cover; flex-shrink:0; border:2px solid rgba(255,255,255,0.25);">
+  <span>{{ site.title }}</span>
+</a>
+
   {% include menu.html menu=pages %}
 </header>
 

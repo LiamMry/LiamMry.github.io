@@ -11,7 +11,7 @@ layout: post
   <div style="font-size:0.8rem; font-weight:600; text-transform:uppercase; letter-spacing:0.07em; color:#4a90d9; margin-bottom:0.5rem;">Key contribution</div>
   <p style="margin:0 0 0.5rem;"><strong>Posterior Gap formalism</strong> — a decomposed, tractable framework to measure how far any generative modelling method is from true posterior sampling, without requiring ground-truth posterior access.</p>
   <p style="margin:0 0 0.5rem;"><strong>NCE-based calibration</strong> — a parameter-free strategy that enforces residual Gaussianity and is shown to minimise the full Posterior Gap across DPS, ΠG, and FPS.</p>
-  <p style="margin:0; font-size:0.88rem; opacity:0.75;">Application: sparse-view CT (6–180 projections) · Benchmarked on JET, LDCT, and LIDC datasets · <a href="https://doi.org/10.1109/JSTSP.2026.3659332">IEEE JSTSP 2026</a>
+  <p style="margin:0; font-size:0.88rem; opacity:0.75;">Application: sparse-view CT (6–180 projections) · Benchmarked on JET, LDCT, and LIDC datasets · <a href="https://doi.org/10.1109/JSTSP.2026.3659332">IEEE JSTSP 2026</a></p>
 </div>
 
 ### 🧠 Overview
