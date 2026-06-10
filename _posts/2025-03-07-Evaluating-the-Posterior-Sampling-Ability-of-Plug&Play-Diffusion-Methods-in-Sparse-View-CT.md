@@ -15,7 +15,7 @@ layout: post
 
 ### 🧠 Overview
 
-This work investigates whether **Plug&Play (PnP) diffusion models**—a class of diffusion models agnostic to the considered observation model—can accurately sample from the **posterior distribution** in **Sparse-View CT (SVCT)** settings, particularly when the posterior is **non-peaked or multimodal**. -> <a href="https://arxiv.org/abs/2410.21301">Arxiv</a>
+This work investigates whether **Plug&Play (PnP) diffusion models**—a class of diffusion models agnostic to the considered observation model—can accurately sample from the **posterior distribution** in **Sparse-View CT (SVCT)** settings, particularly when the posterior is **non-peaked or multimodal**.
 
 
 ## ❗ Problematic

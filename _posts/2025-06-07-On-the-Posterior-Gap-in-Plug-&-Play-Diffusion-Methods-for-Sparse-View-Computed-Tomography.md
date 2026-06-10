@@ -5,11 +5,18 @@ layout: post
 ---
 
 **Authors**: L. Moroy<sup>1,2</sup>, G. Bourmaud<sup>2</sup>, F. Champagnat<sup>1</sup>, J.-F. Giovannelli<sup>2</sup>  
-**Affiliations**: <sup>1</sup>ONERA (Univ. Paris-Saclay), <sup>2</sup>IMS (Univ. Bordeaux – CNRS – BINP),   
+**Affiliations**: <sup>1</sup>ONERA (Univ. Paris-Saclay), <sup>2</sup>IMS (Univ. Bordeaux – CNRS – BINP),  
+
+<div style="border: 1px solid rgba(74,144,217,0.35); border-radius: 8px; padding: 1rem 1.2rem; margin: 1.2rem 0; background: rgba(74,144,217,0.05);">
+  <div style="font-size:0.8rem; font-weight:600; text-transform:uppercase; letter-spacing:0.07em; color:#4a90d9; margin-bottom:0.5rem;">Key contribution</div>
+  <p style="margin:0 0 0.5rem;"><strong>Posterior Gap formalism</strong> — a decomposed, tractable framework to measure how far any generative modelling method is from true posterior sampling, without requiring ground-truth posterior access.</p>
+  <p style="margin:0 0 0.5rem;"><strong>NCE-based calibration</strong> — a parameter-free strategy that enforces residual Gaussianity and is shown to minimise the full Posterior Gap across DPS, ΠG, and FPS.</p>
+  <p style="margin:0; font-size:0.88rem; opacity:0.75;">Application: sparse-view CT (6–180 projections) · Benchmarked on JET, LDCT, and LIDC datasets · <a href="https://doi.org/10.1109/JSTSP.2026.3659332">IEEE JSTSP 2026</a>
+</div>
 
 ### 🧠 Overview
 
-This work is an extended version of our [ICASSP 2025 paper](https://arxiv.org/abs/2410.21301). It formalizes the notion of **Posterior Gap (PG)**, the discrepancy between the true posterior distribution and the approximation induced by a **generative model**, and proposes a practical framework to evaluate it for **Sparse-View CT (SVCT)**. We also introduce an **NCE-based calibration strategy** for PnP methods and conduct a comprehensive benchmark of DPS, ΠG, and FPS across three datasets. -> <a href="https://doi.org/10.1109/JSTSP.2026.3659332">IEEE JSTSP</a>
+This work is an extended version of our [ICASSP 2025 paper]("https://ieeexplore.ieee.org/document/10888207"). It formalizes the notion of **Posterior Gap (PG)**, the discrepancy between the true posterior distribution and the approximation induced by a **generative model**, and proposes a practical framework to evaluate it for **Sparse-View CT (SVCT)**. We also introduce an **NCE-based calibration strategy** for PnP methods and conduct a comprehensive benchmark of DPS, ΠG, and FPS across three datasets.
 
 
 
