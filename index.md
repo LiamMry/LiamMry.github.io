@@ -47,13 +47,13 @@ My work sits at the intersection of two questions: *how do diffusion models repr
 
 ### Demo 1 — What diffusion models actually do
 
-A diffusion model learns to reverse a noise process: starting from pure Gaussian noise, it iteratively denoises toward samples from the data distribution. The key ingredient is the **score function** ∇ log p<sub>σ</sub>(x) — the gradient of the log-density at noise level σ. The visualiser below runs annealed Langevin dynamics on a 2D mixture of Gaussians, showing how particles follow the score field as σ decreases from large (blurry, uninformative) to small (sharp, concentrated on the modes).
+A diffusion model learns to reverse a noise process: starting from pure Gaussian noise, it iteratively denoises toward samples from the data distribution. The key ingredient is the **score function** ∇ log p<sub>σ</sub>(x), the gradient of the log-density at noise level σ. The visualiser below runs annealed Langevin dynamics on a 2D mixture of Gaussians, showing how particles follow the score field as σ decreases from large (blurry, uninformative) to small (sharp, concentrated on the modes).
 
 This is the core mechanism I study: in practice, the distribution is over *images*, the modes are *plausible reconstructions*, and the score is approximated by a neural network.
 
 {% include diffusion_posterior_sampler_2d.html %}
 
-Toggle **Posterior sampling** to see what happens when a linear observation y = x<sub>1</sub> + noise is available. Particles now follow a *conditioned* score — this is the Diffusion Posterior Sampling (DPS) regime my publications analyse. The **posterior gap** I formalise in the JSTSP paper arises precisely when this conditioning is imprecise.
+Toggle **Posterior sampling** to see what happens when a linear observation y = x<sub>1</sub> + noise is available. Particles now follow a *conditioned* score, this is the Diffusion Posterior Sampling (DPS) regime my publications analyse. The **posterior gap** I formalise in the JSTSP paper arises precisely when this conditioning is imprecise.
 
 ---
 
@@ -61,7 +61,7 @@ Toggle **Posterior sampling** to see what happens when a linear observation y = 
 
 Given a trained score network, there are many ways to integrate the reverse SDE. The comparison below runs three algorithms on the same target distribution: DDPM (full stochastic SDE), DDIM (probability flow ODE), and OT-Flow Matching (straight interpolant paths). All three converge, but with very different trajectory geometries and step-count requirements.
 
-Understanding these trade-offs matters for inverse problems: a sampler that needs 1000 steps for clean generation may be impractical inside an iterative reconstruction loop. Much of my current work is about closing this gap — achieving accurate posterior sampling in far fewer function evaluations.
+Understanding these trade-offs matters for inverse problems: a sampler that needs 1000 steps for clean generation may be impractical inside an iterative reconstruction loop. Much of my current work is about closing this gap, achieving accurate posterior sampling in far fewer function evaluations.
 
 {% include sampling_trajectory_comparison.html %}
 
