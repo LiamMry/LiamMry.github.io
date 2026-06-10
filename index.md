@@ -4,7 +4,7 @@ title: "About me"
 ---
 
 <div align="center">
-  <img src="/pp2.jpg" width="200" style="border-radius: 50%; margin-bottom: 1rem;">
+  <img src="/pp2.jpg" width="200" style="border-radius: 10%; margin-bottom: 1rem;">
   <p style="font-size:1.15rem; font-weight:600; margin: 0 0 0.3rem;">Liam Moroy</p>
   <p style="font-size:0.92rem; color:#666; margin: 0 0 1rem;">Postdoc · Heriot-Watt University (BISC) · Edinburgh</p>
   <p style="font-size:0.97rem; font-style:italic; max-width:520px; margin: 0 auto 1.2rem;">
