@@ -61,6 +61,7 @@
 </div>
 
 <script>
+(function(){
 const CVS=[0,1,2].map(i=>document.getElementById('cv'+i));
 const CXS=CVS.map(c=>c.getContext('2d'));
 const CW=212,CH=220,DOM=4.1;
@@ -251,4 +252,5 @@ document.getElementById('btnDens').addEventListener('click',function(){
 });
 
 init();loop();
+})();
 </script>

@@ -12,17 +12,13 @@ title: "About me"
   </p>
   <!-- Social links -->
   <div style="display:flex; justify-content:center; gap:14px; flex-wrap:wrap; margin-bottom:1.5rem;">
-    <a href="mailto:l.moroy@hw.ac.uk" style="text-decoration:none; font-size:0.88rem; padding:5px 12px; border:1px solid #ccc; border-radius:5px;">✉ Email</a>
-    <a href="https://scholar.google.com/citations?user=YOUR_SCHOLAR_ID" target="_blank" style="text-decoration:none; font-size:0.88rem; padding:5px 12px; border:1px solid #ccc; border-radius:5px;">🎓 Google Scholar</a>
+    <a href="mailto:l.moroy@hw.ac.uk" style="text-decoration:none; font-size:0.88rem; padding:5px 12px; border:1px solid #ccc; border-radius:5px;">Email</a>
+    <a href="https://scholar.google.com/citations?user=eO4bW58AAAAJ&hl=en&oi=ao" target="_blank" style="text-decoration:none; font-size:0.88rem; padding:5px 12px; border:1px solid #ccc; border-radius:5px;">🎓 Google Scholar</a>
     <a href="https://github.com/LiamMry" target="_blank" style="text-decoration:none; font-size:0.88rem; padding:5px 12px; border:1px solid #ccc; border-radius:5px;">⌥ GitHub</a>
-    <a href="https://www.linkedin.com/in/YOUR_LINKEDIN_ID" target="_blank" style="text-decoration:none; font-size:0.88rem; padding:5px 12px; border:1px solid #ccc; border-radius:5px;">in LinkedIn</a>
+    <a href="https://www.linkedin.com/in/liam-moroy/" target="_blank" style="text-decoration:none; font-size:0.88rem; padding:5px 12px; border:1px solid #ccc; border-radius:5px;">in LinkedIn</a>
     <a href="/LIAM_MOROY_CV.pdf" download style="text-decoration:none; font-size:0.88rem; padding:5px 12px; border:1px solid #ccc; border-radius:5px;">↓ CV (PDF)</a>
   </div>
 </div>
-
-<!-- <div align="center">
-    <img src="/pp2.jpg" width="250" style="border-radius: 20px;">
-</div> -->
 
 I am a Research Associate (Postdoc) at Heriot-Watt University, in the BISC group, led by Prof. Yoann Altmann. I completed my Ph.D. at Université Paris-Saclay, conducting my research at ONERA (The French Aerospace Lab) and IMS Laboratory. My work focuses on the study of generative models, particularly diffusion models, for solving inverse problems. I am interested in improving the ability of these models to recover high-fidelity images from incomplete or corrupted observations, with applications spanning scientific, nuclear and medical imaging.
 

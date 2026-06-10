@@ -7,6 +7,12 @@ layout: post
 **Authors**: L. Moroy<sup>1,2</sup>, G. Bourmaud<sup>2</sup>, F. Champagnat<sup>1</sup>, J.-F. Giovannelli<sup>2</sup>  
 **Affiliations**: <sup>1</sup>ONERA (Univ. Paris-Saclay), <sup>2</sup>IMS (Univ. Bordeaux – CNRS – BINP),   
 
+<div style="border: 1px solid rgba(74,144,217,0.35); border-radius: 8px; padding: 1rem 1.2rem; margin: 1.2rem 0; background: rgba(74,144,217,0.05);">
+  <div style="font-size:0.8rem; font-weight:600; text-transform:uppercase; letter-spacing:0.07em; color:#4a90d9; margin-bottom:0.5rem;">Key contribution</div>
+  <p style="margin:0 0 0.5rem;"><strong>First systematic evaluation</strong> of whether PnP diffusion methods (DPS, ΠG, FPS) actually sample from the posterior in sparse-view CT — not just produce sharp images.</p>
+  <p style="margin:0; font-size:0.88rem; opacity:0.75;">Venue: ICASSP 2025 · <a href="https://ieeexplore.ieee.org/document/10888207">Conference Paper</a></p>
+</div>
+
 ### 🧠 Overview
 
 This work investigates whether **Plug&Play (PnP) diffusion models**—a class of diffusion models agnostic to the considered observation model—can accurately sample from the **posterior distribution** in **Sparse-View CT (SVCT)** settings, particularly when the posterior is **non-peaked or multimodal**. -> <a href="https://arxiv.org/abs/2410.21301">Arxiv</a>
