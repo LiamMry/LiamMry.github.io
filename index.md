@@ -4,17 +4,34 @@ title: "About me"
 ---
 
 <div align="center">
-    <img src="/pp2.jpg" width="250" style="border-radius: 20px;">
+  <img src="/pp2.jpg" width="200" style="border-radius: 50%; margin-bottom: 1rem;">
+  <p style="font-size:1.15rem; font-weight:600; margin: 0 0 0.3rem;">Liam Moroy</p>
+  <p style="font-size:0.92rem; color:#666; margin: 0 0 1rem;">Postdoc · Heriot-Watt University (BISC) · Edinburgh</p>
+  <p style="font-size:0.97rem; font-style:italic; max-width:520px; margin: 0 auto 1.2rem;">
+    I build theoretically-grounded posterior samplers for diffusion models, with applications in medical and scientific imaging — focusing on sparse-view CT reconstruction.
+  </p>
+  <!-- Social links -->
+  <div style="display:flex; justify-content:center; gap:14px; flex-wrap:wrap; margin-bottom:1.5rem;">
+    <a href="mailto:l.moroy@hw.ac.uk" style="text-decoration:none; font-size:0.88rem; padding:5px 12px; border:1px solid #ccc; border-radius:5px;">✉ Email</a>
+    <a href="https://scholar.google.com/citations?user=YOUR_SCHOLAR_ID" target="_blank" style="text-decoration:none; font-size:0.88rem; padding:5px 12px; border:1px solid #ccc; border-radius:5px;">🎓 Google Scholar</a>
+    <a href="https://github.com/LiamMry" target="_blank" style="text-decoration:none; font-size:0.88rem; padding:5px 12px; border:1px solid #ccc; border-radius:5px;">⌥ GitHub</a>
+    <a href="https://www.linkedin.com/in/YOUR_LINKEDIN_ID" target="_blank" style="text-decoration:none; font-size:0.88rem; padding:5px 12px; border:1px solid #ccc; border-radius:5px;">in LinkedIn</a>
+    <a href="/LIAM_MOROY_CV.pdf" download style="text-decoration:none; font-size:0.88rem; padding:5px 12px; border:1px solid #ccc; border-radius:5px;">↓ CV (PDF)</a>
+  </div>
 </div>
 
-I am a Research Associate (Postdoc) at Heriot-Watt University, in the BISC group, led by Prof. Yoann Altmann. I completed my Ph.D. at Université Paris-Saclay, conducting my research at ONERA (The French Aerospace Lab) and IMS Laboratory. My work focuses on the study of generative models, particularly diffusion models, for solving inverse problems. I am interested in improving the ability of these models to recover high-fidelity images from incomplete or corrupted observations, with applications spanning scientific and medical imaging.
+<!-- <div align="center">
+    <img src="/pp2.jpg" width="250" style="border-radius: 20px;">
+</div> -->
+
+I am a Research Associate (Postdoc) at Heriot-Watt University, in the BISC group, led by Prof. Yoann Altmann. I completed my Ph.D. at Université Paris-Saclay, conducting my research at ONERA (The French Aerospace Lab) and IMS Laboratory. My work focuses on the study of generative models, particularly diffusion models, for solving inverse problems. I am interested in improving the ability of these models to recover high-fidelity images from incomplete or corrupted observations, with applications spanning scientific, nuclear and medical imaging.
 
 ## Research Interests
 
 <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(190px,1fr));gap:0.9rem;margin:1.1em 0 1.5em">
   <div style="border:1px solid rgba(128,128,128,0.22);border-radius:8px;padding:0.9rem 1rem">
     <div style="font-weight:600;margin-bottom:0.3em">Inverse Problems</div>
-    <div style="font-size:0.87em;opacity:0.72">Reconstruction from incomplete or noisy observations — CT, scientific and medical imaging.</div>
+    <div style="font-size:0.87em;opacity:0.72">Reconstruction from incomplete or noisy observations — CT, scientific, nuclear and medical imaging, or any kind of signal really.</div>
   </div>
   <div style="border:1px solid rgba(128,128,128,0.22);border-radius:8px;padding:0.9rem 1rem">
     <div style="font-weight:600;margin-bottom:0.3em">Generative Modelling</div>
