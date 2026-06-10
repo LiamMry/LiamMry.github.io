@@ -52,7 +52,5 @@ Understanding these trade-offs matters for inverse problems: a sampler that need
 
 {% include sampling_trajectory_comparison.html %}
 
----
-
 ## Resume
 <a href="/LIAM_MOROY_CV.pdf" download>Download CV (PDF)</a>
