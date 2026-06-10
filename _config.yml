@@ -24,6 +24,8 @@ navigation:                # accepts {file, title, url, icon, sidebaricon}
 external:                  # shows a footer with social links - for available icons see fontawesome.com/icons
   - {title: Mail, icon: envelope, url: "mailto:l.moroy@hw.ac.uk"}
   - {title: Github, icon: github, url: "https://github.com/LiamMry"}
+  - {title: "Google Scholar", icon: graduation-cap, url: "https://scholar.google.com/citations?user=eO4bW58AAAAJ&hl=en&oi=ao"}
+  - {title: LinkedIn, icon: linkedin-in, url: "https://www.linkedin.com/in/liam-moroy/"}
   #- {title: Subscribe, icon: rss, url: "/feed.xml"}
 
 comments:

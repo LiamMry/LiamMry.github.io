@@ -13,9 +13,9 @@ title: "About me"
   <!-- Social links -->
   <div style="display:flex; justify-content:center; gap:14px; flex-wrap:wrap; margin-bottom:1.5rem;">
     <a href="mailto:l.moroy@hw.ac.uk" style="text-decoration:none; font-size:0.88rem; padding:5px 12px; border:1px solid #ccc; border-radius:5px;">Email</a>
-    <a href="https://scholar.google.com/citations?user=eO4bW58AAAAJ&hl=en&oi=ao" target="_blank" style="text-decoration:none; font-size:0.88rem; padding:5px 12px; border:1px solid #ccc; border-radius:5px;">🎓 Google Scholar</a>
-    <a href="https://github.com/LiamMry" target="_blank" style="text-decoration:none; font-size:0.88rem; padding:5px 12px; border:1px solid #ccc; border-radius:5px;">⌥ GitHub</a>
-    <a href="https://www.linkedin.com/in/liam-moroy/" target="_blank" style="text-decoration:none; font-size:0.88rem; padding:5px 12px; border:1px solid #ccc; border-radius:5px;">in LinkedIn</a>
+    <a href="https://scholar.google.com/citations?user=eO4bW58AAAAJ&hl=en&oi=ao" target="_blank" style="text-decoration:none; font-size:0.88rem; padding:5px 12px; border:1px solid #ccc; border-radius:5px;">Google Scholar</a>
+    <a href="https://github.com/LiamMry" target="_blank" style="text-decoration:none; font-size:0.88rem; padding:5px 12px; border:1px solid #ccc; border-radius:5px;">GitHub</a>
+    <a href="https://www.linkedin.com/in/liam-moroy/" target="_blank" style="text-decoration:none; font-size:0.88rem; padding:5px 12px; border:1px solid #ccc; border-radius:5px;">LinkedIn</a>
     <a href="/LIAM_MOROY_CV.pdf" download style="text-decoration:none; font-size:0.88rem; padding:5px 12px; border:1px solid #ccc; border-radius:5px;">↓ CV (PDF)</a>
   </div>
 </div>
@@ -65,5 +65,5 @@ Understanding these trade-offs matters for inverse problems: a sampler that need
 
 {% include sampling_trajectory_comparison.html %}
 
-## Resume
-<a href="/LIAM_MOROY_CV.pdf" download>Download CV (PDF)</a>
+<!-- ## Resume
+<a href="/LIAM_MOROY_CV.pdf" download>Download CV (PDF)</a> -->
