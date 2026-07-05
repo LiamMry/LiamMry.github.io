@@ -20,6 +20,7 @@ navigation:                # accepts {file, title, url, icon, sidebaricon}
   - {file: "news.md"}
   - {file: "publications.html"}
   - {file: "talks.md"}
+  - {file: "side-projects.md"}
 
 external:                  # shows a footer with social links - for available icons see fontawesome.com/icons
   - {title: Mail, icon: envelope, url: "mailto:l.moroy@hw.ac.uk"}
