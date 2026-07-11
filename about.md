@@ -17,5 +17,5 @@ I am a Research Associate (Postdoc) at Heriot-Watt University, in the BISC group
     - Diffusion models
  
 ## Resume
-<a href="/LIAM_MOROY_CV.pdf" download>Resume download link</a>
+<a href="/MOROY-CV.pdf" download>Resume download link</a>
 
