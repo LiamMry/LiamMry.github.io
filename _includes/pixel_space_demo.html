@@ -56,6 +56,36 @@
 
 </div>
 
+<!-- Real data strip: the domains this machinery is applied to in practice -->
+<div style="margin-top:1.4rem">
+  <div style="font-size:0.9em;color:var(--color-text-secondary);margin-bottom:0.7rem">
+    Faces make the mechanism visible — in practice I apply it to <b style="color:var(--color-text-primary)">tomographic reconstruction</b> across very different fields:
+  </div>
+  <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(160px,1fr));gap:1rem">
+    <div style="display:flex;flex-direction:column;gap:0.45rem">
+      <img src="/assets/demos/jet.png" alt="Tomographic cross-section of a turbulent jet" loading="lazy" style="width:100%;aspect-ratio:1/1;object-fit:cover;border-radius:var(--border-radius-lg);border:1px solid rgba(128,128,128,0.22)">
+      <div style="font-size:0.82em">
+        <b>Fluid mechanics</b><br>
+        <span style="color:var(--color-text-secondary)">Cross-section of a turbulent jet, reconstructed tomographically for aerospace research.</span>
+      </div>
+    </div>
+    <div style="display:flex;flex-direction:column;gap:0.45rem">
+      <img src="/assets/demos/ldct.png" alt="Low-dose CT slice of a pelvis" loading="lazy" style="width:100%;aspect-ratio:1/1;object-fit:cover;border-radius:var(--border-radius-lg);border:1px solid rgba(128,128,128,0.22)">
+      <div style="font-size:0.82em">
+        <b>Medical imaging</b><br>
+        <span style="color:var(--color-text-secondary)">Low-dose CT: fewer photons mean less radiation for the patient, but far noisier measurements.</span>
+      </div>
+    </div>
+    <div style="display:flex;flex-direction:column;gap:0.45rem">
+      <img src="/assets/demos/nuclear.png" alt="Emission tomography of nuclear material" loading="lazy" style="width:100%;aspect-ratio:1/1;object-fit:cover;border-radius:var(--border-radius-lg);border:1px solid rgba(128,128,128,0.22)">
+      <div style="font-size:0.82em">
+        <b>Nuclear imaging</b><br>
+        <span style="color:var(--color-text-secondary)">Emission tomography of nuclear material, where measurements are scarce and safety-critical.</span>
+      </div>
+    </div>
+  </div>
+</div>
+
 </div>
 
 <script>

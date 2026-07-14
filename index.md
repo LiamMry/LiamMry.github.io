@@ -21,7 +21,7 @@ title: "About me"
   </div>
 </div>
 
-I am a Research Associate (Postdoc) at Heriot-Watt University, in the BISC group, led by Prof. Yoann Altmann. I completed my Ph.D. at Université Paris-Saclay, conducting my research at ONERA (The French Aerospace Lab) and IMS Laboratory. My work focuses on the study of generative models, particularly diffusion models, for solving inverse problems. I am interested in improving the ability of these models to recover high-fidelity images from incomplete or corrupted observations, with applications spanning scientific, nuclear and medical imaging.
+I am a Research Associate (Postdoc) at Heriot-Watt University, in the BISC group, led by Prof. Yoann Altmann. I completed my Ph.D. at Université Paris-Saclay, conducting my research at ONERA (The French Aerospace Lab) and IMS Laboratory. My work focuses on the study of generative models, particularly diffusion models, for solving inverse problems. I am interested in improving the ability of these models to recover high-fidelity signals — 1D time series as much as 2D and 3D images — from incomplete or corrupted observations, with applications spanning scientific, nuclear and medical imaging.
 
 ## Research Interests
 
@@ -32,7 +32,7 @@ I am a Research Associate (Postdoc) at Heriot-Watt University, in the BISC group
   </div>
   <div style="border:1px solid rgba(128,128,128,0.22);border-radius:8px;padding:0.9rem 1rem">
     <div style="font-weight:600;margin-bottom:0.3em">Generative Modelling</div>
-    <div style="font-size:0.87em;opacity:0.72">Diffusion models as learned priors for Bayesian inference over images.</div>
+    <div style="font-size:0.87em;opacity:0.72">Diffusion models as learned priors for Bayesian inference over signals and images.</div>
   </div>
   <div style="border:1px solid rgba(128,128,128,0.22);border-radius:8px;padding:0.9rem 1rem">
     <div style="font-weight:600;margin-bottom:0.3em">Posterior Sampling</div>
@@ -44,13 +44,13 @@ I am a Research Associate (Postdoc) at Heriot-Watt University, in the BISC group
 
 ## Research in motion
 
-My work sits at the intersection of two questions: *how do diffusion models represent uncertainty over images*, and *how can that representation be exploited when only partial measurements are available?* The demos below are direct illustrations of these questions.
+My work sits at the intersection of two questions: *how do diffusion models represent uncertainty over signals and images*, and *how can that representation be exploited when only partial measurements are available?* The demos below are direct illustrations of these questions.
 
 ### Demo 1 — What diffusion models actually do
 
 A diffusion model learns to reverse a noise process: starting from pure Gaussian noise, it iteratively denoises toward samples from the data distribution. The key ingredient is the **score function** ∇ log p<sub>σ</sub>(x), the gradient of the log-density at noise level σ. The visualiser below runs annealed Langevin dynamics on a 2D mixture of Gaussians, showing how particles follow the score field as σ decreases from large (blurry, uninformative) to small (sharp, concentrated on the modes).
 
-This is the core mechanism I study: in practice, the distribution is over *images*, the modes are *plausible reconstructions*, and the score is approximated by a neural network.
+This is the core mechanism I study: in practice, the distribution is over *signals* — a 1D waveform, a CT slice, a full volume — the modes are *plausible reconstructions*, and the score is approximated by a neural network. Nothing in the mechanism cares about the dimensionality of x.
 
 {% include diffusion_posterior_sampler_2d.html %}
 
@@ -60,7 +60,7 @@ Toggle **Posterior sampling** to see what happens when a linear observation y = 
 
 ### Demo 2 — The same mechanism, in pixel space
 
-In the 2D toy above, "modes" are points in the plane. In my actual work, each point is an *image*: the prior is a distribution over plausible images, and an observation y carves out the subset consistent with the measurements. The three clips below use the **same score network** trained on FFHQ faces — the only difference between them is the conditioning.
+In the 2D toy above, "modes" are points in the plane. In my actual work, each point is an entire *signal* — here an image, because faces make the mechanism easy to see: the prior is a distribution over plausible reconstructions, and an observation y carves out the subset consistent with the measurements. The three clips below use the **same score network** trained on FFHQ faces — the only difference between them is the conditioning.
 
 First, unconditional generation: the reverse process turns pure noise into a face sampled from the prior. The other two clips show posterior sampling on two inverse problems from my calibrated posterior sampling work — **random inpainting** and **motion deblurring**. In each, the observation y stays fixed while three independent runs produce three *different but equally plausible* reconstructions. That diversity is not a defect, it is the posterior distribution itself — exactly the uncertainty that a single point-estimate reconstruction (or a regression network) throws away, and the quantity my work aims to sample faithfully.
 
