@@ -44,7 +44,7 @@ I am a Research Associate (Postdoc) at Heriot-Watt University, in the BISC group
 
 ## Research in motion
 
-My work sits at the intersection of two questions: *how do diffusion models represent uncertainty over images*, and *how can that representation be exploited when only partial measurements are available?* The two demos below are direct illustrations of these questions.
+My work sits at the intersection of two questions: *how do diffusion models represent uncertainty over images*, and *how can that representation be exploited when only partial measurements are available?* The demos below are direct illustrations of these questions.
 
 ### Demo 1 — What diffusion models actually do
 
@@ -58,13 +58,20 @@ Toggle **Posterior sampling** to see what happens when a linear observation y = 
 
 ---
 
-### Demo 2 — Not all samplers are equal
+### Demo 2 — The same mechanism, in pixel space
+
+In the 2D toy above, "modes" are points in the plane. In my actual work, each point is an *image*: the prior is a distribution over plausible images, and an observation y carves out the subset consistent with the measurements. The three clips below use the **same score network** trained on FFHQ faces — the only difference between them is the conditioning.
+
+First, unconditional generation: the reverse process turns pure noise into a face sampled from the prior. The other two clips show posterior sampling on two inverse problems from my calibrated posterior sampling work — **random inpainting** and **motion deblurring**. In each, the observation y stays fixed while three independent runs produce three *different but equally plausible* reconstructions. That diversity is not a defect, it is the posterior distribution itself — exactly the uncertainty that a single point-estimate reconstruction (or a regression network) throws away, and the quantity my work aims to sample faithfully.
+
+{% include pixel_space_demo.html %}
+
+---
+
+### Demo 3 — Not all samplers are equal
 
 Given a trained score network, there are many ways to integrate the reverse SDE. The comparison below runs three algorithms on the same target distribution: DDPM (full stochastic SDE), DDIM (probability flow ODE), and OT-Flow Matching (straight interpolant paths). All three converge, but with very different trajectory geometries and step-count requirements.
 
 Understanding these trade-offs matters for inverse problems: a sampler that needs 1000 steps for clean generation may be impractical inside an iterative reconstruction loop. Much of my current work is about closing this gap, achieving accurate posterior sampling in far fewer function evaluations.
 
 {% include sampling_trajectory_comparison.html %}
-
-<!-- ## Resume
-<a href="/LIAM_MOROY_CV.pdf" download>Download CV (PDF)</a> -->

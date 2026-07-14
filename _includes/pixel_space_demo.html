@@ -1,0 +1,73 @@
+
+<div style="padding:1rem 0">
+
+<div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(230px,1fr));gap:1rem">
+
+  <!-- Unconditional: noise → face -->
+  <div class="pxd-slot" style="border:1px solid rgba(128,128,128,0.22);border-radius:var(--border-radius-lg);padding:0.9rem;display:flex;flex-direction:column;gap:0.6rem">
+    <div style="font-weight:600;font-size:0.95em">Prior — unconditional</div>
+    <div style="position:relative;aspect-ratio:1/1;border-radius:var(--border-radius-lg);overflow:hidden;background:var(--color-background-secondary)">
+      <video autoplay muted loop playsinline preload="metadata" style="width:100%;height:100%;object-fit:cover;display:block">
+        <source src="/assets/demos/ffhq_unconditional.mp4" type="video/mp4">
+      </video>
+      <div class="pxd-ph" style="display:none;position:absolute;inset:0;flex-direction:column;align-items:center;justify-content:center;gap:6px;border:2px dashed rgba(128,128,128,0.35);border-radius:var(--border-radius-lg);text-align:center;padding:1rem">
+        <span style="font-size:0.9em;font-weight:600;color:var(--color-text-secondary)">Clip unavailable</span>
+        <span style="font-size:0.78em;color:var(--color-text-secondary)">ffhq_unconditional.mp4</span>
+      </div>
+    </div>
+    <div style="font-size:0.82em;color:var(--color-text-secondary)">
+      Reverse diffusion from pure noise x<sub>T</sub> ~ 𝒩(0, I) to a sample from the FFHQ prior. No conditioning — the model generates a face that never existed.
+    </div>
+  </div>
+
+  <!-- Posterior: random inpainting -->
+  <div class="pxd-slot" style="border:1px solid rgba(128,128,128,0.22);border-radius:var(--border-radius-lg);padding:0.9rem;display:flex;flex-direction:column;gap:0.6rem">
+    <div style="font-weight:600;font-size:0.95em">Posterior — random inpainting</div>
+    <div style="position:relative;aspect-ratio:1/1;border-radius:var(--border-radius-lg);overflow:hidden;background:var(--color-background-secondary)">
+      <video autoplay muted loop playsinline preload="metadata" style="width:100%;height:100%;object-fit:cover;display:block">
+        <source src="/assets/demos/ffhq_posterior_random_inpainting.mp4" type="video/mp4">
+      </video>
+      <div class="pxd-ph" style="display:none;position:absolute;inset:0;flex-direction:column;align-items:center;justify-content:center;gap:6px;border:2px dashed rgba(128,128,128,0.35);border-radius:var(--border-radius-lg);text-align:center;padding:1rem">
+        <span style="font-size:0.9em;font-weight:600;color:var(--color-text-secondary)">Clip unavailable</span>
+        <span style="font-size:0.78em;color:var(--color-text-secondary)">ffhq_posterior_random_inpainting.mp4</span>
+      </div>
+    </div>
+    <div style="font-size:0.82em;color:var(--color-text-secondary)">
+      The observation y (top-left, fixed) keeps only a random subset of noisy pixels. The other three cells are independent samples from p(x | y): each is a plausible completion, and they differ precisely where y leaves the image unconstrained — gaze, expression, hair texture.
+    </div>
+  </div>
+
+  <!-- Posterior: motion deblurring -->
+  <div class="pxd-slot" style="border:1px solid rgba(128,128,128,0.22);border-radius:var(--border-radius-lg);padding:0.9rem;display:flex;flex-direction:column;gap:0.6rem">
+    <div style="font-weight:600;font-size:0.95em">Posterior — motion deblurring</div>
+    <div style="position:relative;aspect-ratio:1/1;border-radius:var(--border-radius-lg);overflow:hidden;background:var(--color-background-secondary)">
+      <video autoplay muted loop playsinline preload="metadata" style="width:100%;height:100%;object-fit:cover;display:block">
+        <source src="/assets/demos/ffhq_posterior_motion_blur.mp4" type="video/mp4">
+      </video>
+      <div class="pxd-ph" style="display:none;position:absolute;inset:0;flex-direction:column;align-items:center;justify-content:center;gap:6px;border:2px dashed rgba(128,128,128,0.35);border-radius:var(--border-radius-lg);text-align:center;padding:1rem">
+        <span style="font-size:0.9em;font-weight:600;color:var(--color-text-secondary)">Clip unavailable</span>
+        <span style="font-size:0.78em;color:var(--color-text-secondary)">ffhq_posterior_motion_blur.mp4</span>
+      </div>
+    </div>
+    <div style="font-size:0.82em;color:var(--color-text-secondary)">
+      Here y is a motion-blurred face. Three independent posterior samples recover the sharp image; they disagree only on the fine detail the blur destroyed — the posterior spread adapts to how much information y actually carries.
+    </div>
+  </div>
+
+</div>
+
+</div>
+
+<script>
+(function(){
+  document.querySelectorAll('.pxd-slot').forEach(function(slot){
+    var v = slot.querySelector('video');
+    var ph = slot.querySelector('.pxd-ph');
+    // capture-phase listener catches error events fired on the <source> child
+    v.addEventListener('error', function(){
+      v.style.display = 'none';
+      ph.style.display = 'flex';
+    }, true);
+  });
+})();
+</script>
