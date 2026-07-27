@@ -17,7 +17,7 @@ title: "About me"
     <a href="https://github.com/LiamMry" target="_blank" style="text-decoration:none; font-size:0.88rem; padding:5px 12px; border:1px solid #ccc; border-radius:5px;">GitHub</a>
     <a href="https://www.linkedin.com/in/liam-moroy/" target="_blank" style="text-decoration:none; font-size:0.88rem; padding:5px 12px; border:1px solid #ccc; border-radius:5px;">LinkedIn</a>
     <a href="/LIAM_MOROY_CV.pdf" download style="text-decoration:none; font-size:0.88rem; padding:5px 12px; border:1px solid #ccc; border-radius:5px;">↓ CV (Academic)</a>
-    <a href="/MOROY-CV.pdf" download style="text-decoration:none; font-size:0.88rem; padding:5px 12px; border:1px solid #ccc; border-radius:5px;">↓ CV (Industry)</a>
+    <!-- <a href="/MOROY-CV.pdf" download style="text-decoration:none; font-size:0.88rem; padding:5px 12px; border:1px solid #ccc; border-radius:5px;">↓ CV (Industry)</a> -->
   </div>
 </div>
 
