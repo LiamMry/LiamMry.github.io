@@ -37,3 +37,19 @@ Outside of my academic research, I like applying generative modelling to other d
     <span style="font-size:0.75em;padding:2px 8px;border:1px solid rgba(128,128,128,0.3);border-radius:10px;opacity:0.7">Inverse problems</span>
   </div>
 </div>
+
+<div style="border:1px solid rgba(128,128,128,0.22);border-radius:8px;padding:1rem 1.2rem;margin:1.1em 0 1.5em">
+  <div style="display:flex;align-items:baseline;gap:10px;flex-wrap:wrap;margin-bottom:0.4em">
+    <span style="font-weight:600">Simple RAG system</span>
+    <a href="https://github.com/LiamMry/Scientific-RAG-system" target="_blank" style="font-size:0.85em">GitHub ↗</a>
+  </div>
+  <div style="font-size:0.9em;opacity:0.8;text-align:justify">
+    A local, fully self-hosted Retrieval-Augmented Generation pipeline for querying arXiv papers, with no paid API required. Papers are downloaded from arXiv, parsed to structured TEI/JSON via GROBID, cleaned into title/authors/abstract/section records, and split into overlapping word-bounded chunks. Chunks are embedded with Sentence Transformers and indexed in ChromaDB for retrieval, and a local LLM served through Ollama generates answers grounded in the retrieved passages — the whole pipeline runs incrementally and entirely on-machine.
+  </div>
+  <div style="margin-top:0.6em;display:flex;gap:6px;flex-wrap:wrap">
+    <span style="font-size:0.75em;padding:2px 8px;border:1px solid rgba(128,128,128,0.3);border-radius:10px;opacity:0.7">Python</span>
+    <span style="font-size:0.75em;padding:2px 8px;border:1px solid rgba(128,128,128,0.3);border-radius:10px;opacity:0.7">RAG</span>
+    <span style="font-size:0.75em;padding:2px 8px;border:1px solid rgba(128,128,128,0.3);border-radius:10px;opacity:0.7">ChromaDB</span>
+    <span style="font-size:0.75em;padding:2px 8px;border:1px solid rgba(128,128,128,0.3);border-radius:10px;opacity:0.7">Local LLM (Ollama)</span>
+  </div>
+</div>
